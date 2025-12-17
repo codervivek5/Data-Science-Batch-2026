@@ -1,7 +1,5 @@
 # 🚀 Ultimate Data Science, AI & Generative AI Course (2026) – Desi Style
 
-![Course Banner](https://brollyai.com/wp-content/uploads/2025/12/Data-science-with-generative-AI-1024x576.jpg)
-
 > **From absolute beginner to industry-ready AI professional** – Hands-on, project-driven, and explained in simple **Desi style** (clear, practical, no unnecessary jargon).  
 > Real-world skills used in top tech companies & startups.
 
