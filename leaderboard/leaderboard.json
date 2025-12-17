@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "rank": 1,
+      "name": "Vivek Kumar",
+      "progress": 75,
+      "projects_completed": 12,
+      "badge": "🔥 Top Performer"
+    },
+    {
+      "rank": 2,
+      "name": "Ankit Sharma",
+      "progress": 60,
+      "projects_completed": 9,
+      "badge": "🚀 Fast Learner"
+    },
+    {
+      "rank": 3,
+      "name": "Neha Verma",
+      "progress": 45,
+      "projects_completed": 6,
+      "badge": "💡 Consistent"
+    }
+  ]
+}
