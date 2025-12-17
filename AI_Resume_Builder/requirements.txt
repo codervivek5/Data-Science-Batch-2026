@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-langchain
-langchain-community
-langchain-core
-together
-google-generativeai
-python-dotenv
-jinja2
