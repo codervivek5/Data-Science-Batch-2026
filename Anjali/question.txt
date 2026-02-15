@@ -1,0 +1,10 @@
+1️⃣ Write a function to add two numbers and return the result.
+2️⃣ Write a function that prints “Hello World”.
+3️⃣ Write a function to find the square of a number.
+4️⃣ Write a function to check if a number is even or odd.
+5️⃣ Write a function to return the largest of two numbers.
+6️⃣ Write a function to calculate the factorial of a number.
+7️⃣ Write a function to reverse a string.
+8️⃣ Write a function to count vowels in a string.
+9️⃣ Write a function that returns sum of all elements in a list.
+🔟 Write a function to check if a number is prime.
