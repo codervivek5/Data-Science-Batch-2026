@@ -1,24 +1,35 @@
+import asyncio
 from langchain_ollama import ChatOllama
+from langchain_core.prompts import PromptTemplate
+from langchain_classic.memory import ConversationBufferMemory
+from langchain.messages import HumanMessage, SystemMessage
 
 llm = ChatOllama(
     model="llama3.2",
-    temperature=0,
+    temperature=0.7,
 )
 
-def result(query):
+async def result(query):
+    prompt_template = PromptTemplate(
+        template=""""
+                You are a helpful telegram bot.
+                Talk like a friendly human in Hinglish.
+                Your name is {name}.
+                
+                User: {query}
+                Bot:
+                """,
+        input_variables=["name","query"],
+    )
+    prompt = prompt_template.format(
+        name="Lol Ritu",
+        query=query,
+    )
 
-    messages = [
-        (
-            "system",
-            "You are a helpful telegram bot that will talk as a friend",
-        ),
-        ("human", query),
-    ]
-    ai_msg = llm.invoke(messages)
-    # print(ai_msg.content)
+    ai_msg = await llm.ainvoke(prompt)
     return ai_msg.content
 
 if __name__=="__main__":
-    chat_msg = result("hello")
+    chat_msg = asyncio.run(result("hello"))
     print(chat_msg)
 
