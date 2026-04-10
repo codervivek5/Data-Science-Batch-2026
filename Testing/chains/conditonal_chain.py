@@ -37,7 +37,7 @@ prepare = RunnableLambda(
     "sentiment": condition_chain.invoke({"text": x["text"]})
 })
 
-# FIX: correct branch + default
+# FIX: correct branch + default,test
 branch_chain = RunnableBranch(
     (lambda x: "Positive" in x["sentiment"], positive_chain),
     (lambda x: "Negative" in x["sentiment"], negative_chain),
